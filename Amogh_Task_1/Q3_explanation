@@ -1,0 +1,10 @@
+basically, we need to find at what point is learning the language cheaper then repeated translations, for that, I first made a mapping that mapped every language to number of people speaking it for ex {'A':3}
+then I took only the second element of this mapping (the number) and appended all of them to a vector, and I then sorted the vector in ascending order
+
+I did this because if we are learning a language, its better to learn one with more speakers so its better to use our translators first with less popular languages to get rid of them for cheap 
+
+so I go through the vector and keep translating until I get to a point where translating for x people speaking that language is more expensive then learning it, and consequently, all languages after that also would be cheaper to learn since the vector is arranged in ascending order
+
+I have a variable price which I increment by cost of repeated translations if cheaper or by the fixed cost c of learning language if cheaper
+
+the other variables counter, current_count, it , flag are just for the loops and conditionals to work, and to keep track of what the next translation costs, since the price increases after each translation
