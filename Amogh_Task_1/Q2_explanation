@@ -1,0 +1,13 @@
+since only larger can be converted to smaller, we start with large demand and supply
+
+I take a variable count to denote how many people can become happy
+
+so for the largest shirt, if demand > supply, then no use of converting them into smaller ones since making one person unhappy to make another happy doesn't change the net count 
+if supply > demand, we can convert all excess ones into the one smaller, since they wont get used and might get used for the smaller one
+
+same for the middle shirt
+
+for the smallest shirt, same logic but we leave out the conversion since it cant be converted into everything, excess shirts don't matter to us at this point
+
+so when supply > demand then I add the demand value to count
+if demand > supply, then I add the supply value to count
