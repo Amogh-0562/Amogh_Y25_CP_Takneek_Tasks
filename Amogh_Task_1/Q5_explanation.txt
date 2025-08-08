@@ -1,0 +1,19 @@
+here I realised that we can beautifully represent the 2 strings and make the operations simpler by using pairs
+where each pair has the form (a[i], b[i]) for each index i
+
+for the operations, it means we can switch elements in a pair 
+and for the other operation, its equal to switching order of pairs (interchanging positions of any 2)
+
+this means that (0,1) and (1,0) are basically equivalent since they can be interconverted freely 
+
+for both strings to be palindrome, each pair should have the same pair on the mirror position
+
+let x = no of (1,1)
+y = no of (0,0)
+z = no of (0,1) + (1,0)
+
+the only possible combinations are
+
+1. all x,y,z are even (so they can be mirrored )
+
+2. only one of them is odd, rest are even. (the odd one will be at the centre of the string, it doesn't need to match with anything)
