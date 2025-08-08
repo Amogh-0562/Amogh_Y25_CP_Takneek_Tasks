@@ -1,0 +1,10 @@
+if distance before rest (x) > total distance (y)
+then 0 stops 
+
+so in order to find no of stops for y> x, we basically want to know how many x's fit in a y
+so we do floor division
+
+only 1 exception when y is a multiple of x 
+then the last stop is after he has completed the race, so that wont count 
+so then we do floor (y/x) - 1
+otherwise we do floor(y/x)
